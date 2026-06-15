@@ -222,30 +222,6 @@ nav {
   position: relative;
   z-index: 1;
 }
-
-.hero-kicker {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(224, 140, 42, 0.15);
-  border: 1px solid rgba(224, 140, 42, 0.3);
-  color: var(--amber);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  padding: 6px 16px;
-  margin-bottom: 24px;
-}
-
-.hero-kicker::before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  background: var(--amber);
-  border-radius: 50%;
-  animation: pulse 2s infinite;
-}
-
 @keyframes pulse {
   0%, 100% {
     opacity: 1;
@@ -513,23 +489,6 @@ h2.section-title {
   line-height: 1.6;
 }
 
-.award-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 32px;
-}
-
-.chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 7px 14px;
-  font-size: 12px;
-  font-weight: 700;
-  border: 1.5px solid;
-}
-
 /* ═══ RESULTS ═══ */
 #results {
   background: var(--ink);
@@ -653,64 +612,6 @@ h2.section-title {
 .vs-item .lbl {
   font-size: 11px;
   color: rgba(255, 255, 255, 0.4);
-}
-
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 16px;
-}
-
-.video-card {
-  background: rgba(30, 20, 10, 0.88);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  overflow: hidden;
-  transition: transform 0.2s, border-color 0.2s;
-}
-
-.video-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(224, 140, 42, 0.4);
-}
-
-.video-thumb {
-  height: 110px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
-  position: relative;
-}
-
-.video-thumb::after {
-  content: '▶';
-  position: absolute;
-  width: 38px;
-  height: 38px;
-  background: rgba(224, 140, 42, 0.85);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-  color: var(--ink);
-  border-radius: 50%;
-}
-
-.video-info {
-  padding: 14px 16px;
-}
-
-.video-info h4 {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--white);
-  margin-bottom: 4px;
-}
-
-.video-info a {
-  font-size: 11px;
-  color: var(--amber);
-  text-decoration: none;
 }
 
 .feedback-row {
@@ -950,77 +851,10 @@ h2.section-title {
   margin-bottom: 6px;
 }
 
-.join-right .sub {
+.join-right {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.45);
   margin-bottom: 28px;
-}
-
-.join-form-field {
-  margin-bottom: 16px;
-}
-
-.join-form-field label {
-  display: block;
-  font-size: 12px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.5);
-  letter-spacing: 1px;
-  margin-bottom: 6px;
-}
-
-.join-form-field input,
-.join-form-field select,
-.join-form-field textarea {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: var(--white);
-  font-size: 14px;
-  font-family: 'Noto Sans TC', sans-serif;
-  padding: 10px 14px;
-  outline: none;
-  transition: border-color 0.2s;
-}
-
-.join-form-field input:focus,
-.join-form-field select:focus,
-.join-form-field textarea:focus {
-  border-color: var(--amber);
-}
-
-.join-form-field select option {
-  background: var(--ink);
-}
-
-.join-form-field textarea {
-  height: 80px;
-  resize: vertical;
-}
-
-.form-submit {
-  width: 100%;
-  padding: 13px;
-  background: var(--amber);
-  color: var(--ink);
-  font-size: 15px;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-  font-family: 'Noto Sans TC', sans-serif;
-  transition: background 0.2s;
-  margin-top: 4px;
-}
-
-.form-submit:hover {
-  background: var(--amber2);
-}
-
-.form-note {
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.3);
-  text-align: center;
-  margin-top: 12px;
 }
 
 /* ═══ FOOTER ═══ */
@@ -1180,10 +1014,6 @@ footer {
     grid-template-columns: 1fr !important;
   }
   
-  .benefit-grid {
-    grid-template-columns: 1fr;
-  }
-  
   .cta-bar {
     flex-direction: column;
     padding: 28px 20px;
@@ -1200,29 +1030,11 @@ footer {
   h2.section-title {
     font-size: 26px;
   }
-
-  /* Award bar mobile */
-  .award-bar-grid {
-    grid-template-columns: 1fr !important;
-  }
-  
-  .award-bar-divider {
-    display: none !important;
-  }
-
-  /* Photos: single column on mobile */
-  .about-photo-row {
-    grid-template-columns: 1fr !important;
-  }
   
   .results-strip {
     grid-template-columns: 1fr !important;
   }
-  
-  .partner-dual {
-    grid-template-columns: 1fr !important;
-  }
-  
+
   .venue-grid {
     grid-template-columns: 1fr !important;
   }
