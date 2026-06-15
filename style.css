@@ -445,6 +445,9 @@ h2.section-title {
   line-height: 1.9;
   margin-bottom: 20px;
 }
+.about-text strong {
+  color:var(--rust)
+}
 
 .module-flow {
   display: flex;
